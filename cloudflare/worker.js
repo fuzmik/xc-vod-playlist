@@ -847,7 +847,7 @@ export default {
 			} else if (pathname === "/player_api.php") {
 				response = await handlePlayerAPI(request);
 			} else if (pathname === "/xmltv.php") {
-				return Response.redirect("http://drewlive24.duckdns.org:8081/DrewLive.xml.gz", 302);
+				return Response.redirect("https://github.com/Drewski2423/DrewLive/raw/refs/heads/main/DrewLive.xml.gz", 302);
 			} else if (pathname.startsWith("/movie/")) {
 				const u = pathname.split('/')[2];
 				response = await handleMovie(pathname, u);
@@ -878,3 +878,4 @@ export default {
     }
   },
 };
+
