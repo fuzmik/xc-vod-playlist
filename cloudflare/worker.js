@@ -847,7 +847,7 @@ export default {
 			} else if (pathname === "/player_api.php") {
 				response = await handlePlayerAPI(request);
 			} else if (pathname === "/xmltv.php") {
-				return Response.redirect("http://drewlive24.duckdns.org:8081/DrewLive/MergedCleanPlaylist.m3u8", 302);
+				return Response.redirect("http://drewlive24.duckdns.org:8081/DrewLive/DrewLive.xml.gz", 302);
 			} else if (pathname.startsWith("/movie/")) {
 				const u = pathname.split('/')[2];
 				response = await handleMovie(pathname, u);
@@ -878,5 +878,6 @@ export default {
     }
   },
 };
+
 
 
